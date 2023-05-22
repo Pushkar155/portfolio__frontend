@@ -1,0 +1,85 @@
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:3.5rem;
+}
+.conatct__up{
+    width: 100%;
+    background-color: rgb(47, 45, 45);
+    /* border-bottom: 4px solid #30ff67; */
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    color: white;
+}
+.achive__Home{
+    color: white;
+    margin-right: 50px;
+}
+.contact__down{
+    padding: 20px;
+    width: 50%;
+    background-color: rgb(255, 255, 255);
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: rgba(32, 29, 29, 0.35) 0px 5px 55px;
+}
+.contact__email>input{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    width: 400px;
+    height: 5vh;
+    border-bottom: 2px solid black;
+    outline: none;
+    border-top:none;
+    border-left:none ;
+    border-right:none ;
+    /* border-bottom: 2px solid black; */
+    /* border-radius: 8px; */
+    font-size: 20px;
+}
+.contact__email>input:hover{
+    border-bottom: 2px solid rgb(135, 155, 153);
+}
+.contact__email1>input{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 400px;
+    height: 5vh;
+    border: 2px solid black;
+    border-radius: 8px;
+    font-size: 20px;
+}
+.contact__email>textarea{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 400px;
+    height: 30vh;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 15px;
+    outline: none;
+}
+.contact__button>button{
+    margin-left: 150px;
+    height: 30px;
+    width: 100px;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 6px;
+    border: 0px solid #000000;
+    background-color: #2ecf59;
+}
+.contact__button>button:hover{
+    color: #ffffff;
+    background-color: #111010;
+}

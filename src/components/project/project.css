@@ -1,0 +1,30 @@
+.project{
+    width: 100%;
+    height: 100vh;
+}
+.project__nav{
+    width: 100%;
+    background-color: rgb(47, 45, 45);
+    /* border-bottom: 4px solid #30ff67; */
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    color: white;
+}
+.achive__Project{
+    color: white;
+    margin-right: 50px;
+}
+.project__nav>h2{
+    font-size: 1.4rem;
+}
+.project__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    
+}
