@@ -5,17 +5,23 @@ import Content from './Content';
 import {NavLink} from "react-router-dom";
 import { useEffect, useState } from 'react';
 import HomeIcon from '@mui/icons-material/Home';
+import Cardskeleton from '../achivements/Cardskeleton';
 
 const Project = () => {
   const [data, setData] = useState([]);
+  const [isloading,setIsloading] = useState(true);
   useEffect(() => {
-    fetchData();
+    setTimeout(()=>{
+      fetchData();
+    },1000);
+    
   }, []);
   const fetchData = async () => {
     try {
       const response = await fetch('https://portfolio-backend-ashen.vercel.app/api/achive/getting');
       const jsonData = await response.json();
       setData(jsonData)
+      setIsloading(false);
     } catch (error) {
       console.error('Error:', error);
     }
@@ -29,6 +35,7 @@ const Project = () => {
            <h2>Projects</h2> 
         </div>
         <div className="project__content">
+            {isloading && <Cardskeleton count={3}/>}
             {data.map((item, index) => (
                 <Content  image={item.img} title={item.name} link={item.link} tech={item.techused}/>
             ))}

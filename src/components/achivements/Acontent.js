@@ -12,7 +12,7 @@ function Acontent({ title, image, tech, link }) {
           <h3>{tech}</h3>
         </div>
         <div className="acont__right">
-          <a href={link} className="acont__button">
+          <a href={link} target="_blank" rel="noreferrer" className="acont__button">
             <button>Visit</button>
           </a>
         </div>
